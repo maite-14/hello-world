@@ -14,13 +14,13 @@ public class Color{
   private int[] primes = {2, 3, 5, 7, 11, 13, 17, 19};
   
   //synchronize functions accessing the array 
-  public void setVal(int index, int ID){
+  public void setVal(int index, int ID){ //EDIT PARAMETERS
     synchronized(primes){
       primes[index] = ID; 
     } 
   }
   
-  public int getVal(int index){
+  public int getVal(int index){ //EDIT PARAMETERS
     synchronized(primes){
       return primes[index]; 
     }
